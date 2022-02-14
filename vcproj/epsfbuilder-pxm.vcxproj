@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6AB6113B-F8C8-491B-9E4C-D0489ECE324B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>epsfbuilder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\pcl\include;$(ProjectDir)..\pcl\src\3rdparty;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\pcl\include;$(ProjectDir)..\pcl\src\3rdparty;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\pcl\include;$(ProjectDir)..\pcl\src\3rdparty;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\pcl\include;$(ProjectDir)..\pcl\src\3rdparty;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;EPSFBUILDERPXM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "__PCL_WINDOWS" /D "__restrict=" %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;EPSFBUILDERPXM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "__PCL_WINDOWS" /D "__restrict=" %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;EPSFBUILDERPXM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "__PCL_WINDOWS" /D "__restrict=" %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;EPSFBUILDERPXM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <AdditionalOptions>/D "__PCL_WINDOWS" /D "__restrict=" %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\chkder.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\chkder_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dogleg.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dogleg_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dpmpar.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dpmpar_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\enorm.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\enorm_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac2.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac2_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmpar.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmpar_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr1_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qform.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qform_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrfac.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrfac_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrsolv.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrsolv_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1mpyq.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1mpyq_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1updt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1updt_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\rwupdt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\rwupdt_.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsalpha.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscam02.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscgats.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscnvrt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmserr.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsgamma.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsgmt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmshalf.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsintrp.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsio0.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsio1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmslut.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsmd5.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsmtrx.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsnamed.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsopt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmspack.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmspcs.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsplugin.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsps2.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmssamp.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmssm.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmstypes.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsvirt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmswtpnt.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsxform.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lz4\lz4.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\lz4\lz4hc.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\hkdf.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\hmac.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha1.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha224-256.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha384-512.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\usha.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\adler32.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\compress.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\crc32.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\deflate.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzclose.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzlib.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzread.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzwrite.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\infback.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inffast.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inflate.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inftrees.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\trees.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\uncompr.c" />
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\zutil.c" />
+    <ClCompile Include="..\pcl\src\pcl\Action.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\AdaptiveLocalFilter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\AES256.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Algebra.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\API.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\APIInterface.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Arguments.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\AstrometricMetadata.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ATrousWaveletTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Base64.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Bitmap.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\BitmapBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Brush.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Button.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CFAType.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CharTraits.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CheckBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CodeEditor.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Color.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ColorComboBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ColorDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ColorSpace.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ComboBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Compression.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Console.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Control.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Convolution.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CRC32.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Crop.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\CUDADevice.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Cursor.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Diagnostics.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Dialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\DisplayFunction.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\DrizzleData.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Edit.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\EphemerisFile.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Exception.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ExternalProcess.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FactorialCache.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FastRotation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FFT1D.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FFT2D.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FFTConvolution.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FFTRotationAndScaling.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FFTTranslation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\File.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileDataCache.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileDataCachePreferencesDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileFormat.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileFormatImplementation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileFormatInstance.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FileInfo.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Font.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FontComboBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\FourierTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Frame.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\GlobalSettings.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\GnomonicProjection.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Graphics.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\GroupBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\HammerAitoffProjection.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\HexString.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Histogram.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\HistogramTransformation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ICCProfile.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ICCProfileTransformation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageColor.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageOp.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageStatistics.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageVariant.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageView.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageWindow.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ImageWindow_CM.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\IntegerResample.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\IntegrationMetadata.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\JPLEphemeris.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\JulianDay.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\KernelFilter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Keyboard.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Label.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\LanczosInterpolation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\LinearFit.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\LocalNormalizationData.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MD5.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Median.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MercatorProjection.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MessageBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MetaFileFormat.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MetaModule.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MetaParameter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MetaProcess.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MorphologicalTransformation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MultiscaleLinearTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MultiscaleMedianTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MultiViewSelectionDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\MuteStatus.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\NetworkTransfer.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\NumericControl.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\OnlineObjectSearchDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\OrthographicProjection.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Pen.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PolarTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Position.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PreviewSelectionDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Process.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProcessImplementation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProcessInstance.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProcessInterface.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProcessParameter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProgressBarStatus.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProgressDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProjectionBase.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ProjectionFactory.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PSFEstimator.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PSFFit.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PSFSignalEstimator.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PushButton.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\PyramidalWaveletTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\RadioButton.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Random.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ReadoutOptions.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ReadWriteMutex.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\RealTimePreview.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\RedundantMultiscaleTransform.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Render.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Resample.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\RGBColorSystem.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Rotation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ScrollBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SectionBar.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SeparableConvolution.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SeparableMedianFilter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Settings.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SHA1.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SHA224.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SHA256.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SHA384.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SHA512.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SharedPixelData.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Sizer.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Slider.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SphericalRotation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SpinBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SpinStatus.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\StandardStatus.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\StarDatabaseFile.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\StarDetector.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\StatusMonitor.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\String.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SurfaceSimplifier.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SurfaceSpline.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\SVG.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\TabBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\TextBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Thread.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\TimePoint.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Timer.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ToolButton.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Translation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\TreeBox.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UCCaseFolding.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UCLowercase.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UCUppercase.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UIObject.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UIScaling.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\UnixSignalException.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Variant.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Version.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\View.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ViewList.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\ViewSelectionDialog.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\WCSKeywords.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\WebView.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\Win32Exception.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\WorldTransformation.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\XISF.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\XISFReader.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\XISFWriter.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\XML.cpp" />
+    <ClCompile Include="..\pcl\src\pcl\XMLReference.cpp" />
+    <ClCompile Include="..\EPSFBuilderInstance.cpp" />
+    <ClCompile Include="..\EPSFBuilderInterface.cpp" />
+    <ClCompile Include="..\EPSFBuilderModule.cpp" />
+    <ClCompile Include="..\EPSFBuilderParameters.cpp" />
+    <ClCompile Include="..\EPSFBuilderProcess.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

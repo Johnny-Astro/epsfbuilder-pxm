@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\pcl">
+      <UniqueIdentifier>{9b3dad63-b632-40cb-9265-c7f18023f70e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty">
+      <UniqueIdentifier>{000914d2-6553-4b54-a448-8f21a3717c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\lz4">
+      <UniqueIdentifier>{318a0c9f-210f-4a6e-9042-3082b80f7053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\zlib">
+      <UniqueIdentifier>{946294c5-215e-49ea-96dc-a3ee7dfad185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\cminpack">
+      <UniqueIdentifier>{423cdd34-de88-4d41-89d0-f51672cafd47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\lcms">
+      <UniqueIdentifier>{2004bae9-4a50-45c6-a496-d48daf9ef8b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rdparty\RFC6234">
+      <UniqueIdentifier>{407d9776-7e42-44b9-be43-ac95ab24613c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\pcl\src\pcl\Action.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\AdaptiveLocalFilter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\AES256.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Algebra.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\API.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\APIInterface.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Arguments.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\AstrometricMetadata.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ATrousWaveletTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Base64.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Bitmap.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\BitmapBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Brush.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Button.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CFAType.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CharTraits.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CheckBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CodeEditor.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Color.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ColorComboBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ColorDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ColorSpace.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ComboBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Compression.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Console.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Control.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Convolution.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CRC32.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Crop.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\CUDADevice.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Cursor.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Diagnostics.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Dialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\DisplayFunction.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\DrizzleData.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Edit.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\EphemerisFile.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Exception.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ExternalProcess.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FactorialCache.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FastRotation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FFT1D.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FFT2D.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FFTConvolution.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FFTRotationAndScaling.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FFTTranslation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\File.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileDataCache.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileDataCachePreferencesDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileFormat.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileFormatImplementation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileFormatInstance.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FileInfo.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Font.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FontComboBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\FourierTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Frame.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\GlobalSettings.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\GnomonicProjection.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Graphics.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\GroupBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\HammerAitoffProjection.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\HexString.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Histogram.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\HistogramTransformation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ICCProfile.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ICCProfileTransformation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageColor.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageOp.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageStatistics.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageVariant.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageView.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageWindow.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ImageWindow_CM.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\IntegerResample.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\IntegrationMetadata.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\JPLEphemeris.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\JulianDay.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\KernelFilter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Keyboard.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Label.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\LanczosInterpolation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\LinearFit.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\LocalNormalizationData.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MD5.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Median.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MercatorProjection.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MessageBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MetaFileFormat.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MetaModule.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MetaParameter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MetaProcess.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MorphologicalTransformation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MultiscaleLinearTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MultiscaleMedianTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MultiViewSelectionDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\MuteStatus.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\NetworkTransfer.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\NumericControl.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\OnlineObjectSearchDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\OrthographicProjection.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Pen.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PolarTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Position.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PreviewSelectionDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Process.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProcessImplementation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProcessInstance.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProcessInterface.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProcessParameter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProgressBarStatus.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProgressDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProjectionBase.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ProjectionFactory.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PSFFit.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PushButton.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PyramidalWaveletTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\RadioButton.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Random.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ReadoutOptions.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ReadWriteMutex.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\RealTimePreview.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\RedundantMultiscaleTransform.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Render.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Resample.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\RGBColorSystem.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Rotation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ScrollBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SectionBar.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SeparableConvolution.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SeparableMedianFilter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Settings.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SHA1.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SHA224.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SHA256.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SHA384.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SHA512.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SharedPixelData.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Sizer.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Slider.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SphericalRotation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SpinBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SpinStatus.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\StandardStatus.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\StarDatabaseFile.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\StatusMonitor.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\String.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SurfaceSimplifier.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SurfaceSpline.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\SVG.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\TabBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\TextBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Thread.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\TimePoint.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Timer.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ToolButton.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Translation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\TreeBox.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UCCaseFolding.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UCLowercase.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UCUppercase.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UIObject.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UIScaling.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\UnixSignalException.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Variant.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Version.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\View.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ViewList.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\ViewSelectionDialog.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\WCSKeywords.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\WebView.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\Win32Exception.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\WorldTransformation.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\XISF.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\XISFReader.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\XISFWriter.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\XML.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\XMLReference.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lz4\lz4.c">
+      <Filter>Source Files\3rdparty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lz4\lz4hc.c">
+      <Filter>Source Files\3rdparty\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\adler32.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\compress.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\crc32.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\deflate.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzclose.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzlib.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzread.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\gzwrite.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\infback.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inffast.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inflate.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\inftrees.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\trees.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\uncompr.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\zlib\zutil.c">
+      <Filter>Source Files\3rdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\chkder.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\chkder_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\covar1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dogleg.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dogleg_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dpmpar.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\dpmpar_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\enorm.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\enorm_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac2.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\fdjac2_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrd1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\hybrj1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmder1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmdif1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmpar.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmpar_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr1.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\lmstr1_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qform.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qform_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrfac.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrfac_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrsolv.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\qrsolv_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1mpyq.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1mpyq_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1updt.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\r1updt_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\rwupdt.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\cminpack\rwupdt_.c">
+      <Filter>Source Files\3rdparty\cminpack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsalpha.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscam02.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscgats.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmscnvrt.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmserr.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsgamma.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsgmt.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmshalf.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsintrp.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsio0.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsio1.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmslut.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsmd5.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsmtrx.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsnamed.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsopt.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmspack.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmspcs.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsplugin.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsps2.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmssamp.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmssm.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmstypes.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsvirt.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmswtpnt.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\lcms\cmsxform.c">
+      <Filter>Source Files\3rdparty\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\hkdf.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\hmac.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha1.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha224-256.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\sha384-512.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\3rdparty\RFC6234\usha.c">
+      <Filter>Source Files\3rdparty\RFC6234</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EPSFBuilderModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EPSFBuilderInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EPSFBuilderInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EPSFBuilderParameters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EPSFBuilderProcess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PSFSignalEstimator.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\StarDetector.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\pcl\src\pcl\PSFEstimator.cpp">
+      <Filter>Source Files\pcl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
